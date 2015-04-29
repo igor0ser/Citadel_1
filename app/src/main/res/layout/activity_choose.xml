@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc" tools:context=".Start">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/dummy_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_gravity="center">
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char1"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton2"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char2"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton3"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char3"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton4"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char4"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton5"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char5"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton6"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char6"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton7"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char7"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:layout_width="118dp"
+                android:layout_height="152dp"
+                android:id="@+id/imageButton8"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char8"
+                android:scaleType="fitXY" />/>
+        </GridLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>
